@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        background-color: antiquewhite;
+    }
+    h1{
+
+        font-size: 50px ;
+        text-align: center;
+    }
+    img{
+        width:100%;
+    }
+    .text{
+        margin-top: 200px;
+    }
+    .switch{
+        display:inline-block;
+       
+        width:20px;
+        height:20px;
+        border-radius:50% ;
+        border:1px solid grey;
+        
+
+    }
+    #white{
+        background-color: white;
+    }
+    #red{
+        background-color: red;
+    }
+    #blue{
+        background-color: blue;
+    }
+    #black{
+        background-color: black;
+    }
+    #color-switcher{
+        text-align: right;
+    }
+   </style>
+</head>
+<body>
+    <nav id="color-switcher" >
+   <span id="white" class="switch"></span>
+   <span id="red" class="switch"></span>
+   <span id="blue" class="switch"></span>
+   <span id="black" class="switch"></span>
+    </nav>
+    <h1 class="text">About us</h1>
+    <div class="img">
+        <img src="https://c4.wallpaperflare.com/wallpaper/295/163/719/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg" alt="">
+    </div>
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facilis deleniti quibusdam unde reiciendis rem fuga excepturi? Ab, tenetur dignissimos. Sapiente architecto est hic cupiditate eum adipisci atque quia labore!
+    Consequuntur vero ipsum similique qui quos eligendi nihil incidunt. Minus voluptatibus culpa expedita eos inventore quam eveniet. Delectus doloribus et, perspiciatis facere ad eveniet ipsa, cumque corporis, earum velit neque!
+    Ut adipisci consequatur neque, laudantium quisquam vero facilis totam quos nulla doloremque, exercitationem aspernatur officia iste quidem ex nisi voluptate? Neque, possimus at atque dignissimos nam pariatur doloribus aut id.</div>
+
+
+
+
+    <script>
+        let white=document.getElementById("white");
+        let red=document.getElementById("red");
+        let blue=document.getElementById("blue");
+        let black=document.getElementById("black");
+        white.addEventListener("click",whitee);
+        red.addEventListener("click",redd);
+        blue.addEventListener("click",bluee);
+        black.addEventListener("click",blackk);
+        let text=document.getElementsByClassName("text");
+        function whitee(){
+            document.body.style.background="white";
+        }
+        function redd(){
+            document.body.style.background="red";
+        }
+        function bluee(){
+            document.body.style.background="blue";
+        }
+        function blackk(){
+            document.body.style.background="black";
+            for(let rm of text){
+                rm.style.color="white";
+            }
+        }
+      
+     
+       
+     
+    </script>
+</body>
+</html>
